@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    emulator:
+        build: .
+        ports:
+            - 8080:8080
+        volumes:
+            - ./src:/emulator/src
+            - ./dist:/emulator/dist
+            - ./tsconfig.json:/emulator/tsconfig.json
+            - ./webpack.config.js:/emulator/webpack.config.js
+            - ./.npmignore:/emulator/.npmignore
+        tty: true
