@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "build": "node ./node_modules/webpack/bin/webpack",
-    "start": "webpack-dev-server --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.config.js --host 0.0.0.0"
   },
   "author": "Andy O'Neill <aoneill01@gmail.com>",
   "repository": {
